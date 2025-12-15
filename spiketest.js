@@ -9,7 +9,7 @@ Example: Product goes viral on social media, 1000 users hit site instantly
 
 import http from "k6/http";
 import { check, sleep } from "k6";
-
+import  { BASE_URL } from './config.js'; // Import base URL from config file
 export const options = {
   stages: [
     { duration: "10s", target: 10 }, // Normal load
@@ -25,7 +25,7 @@ export const options = {
 };
 
 export default function () {
-  const res = http.get("https://quickpizza.grafana.com/test.k6.io");
+  const res = http.get(`${BASE_URL}/test.k6.io`);
   check(res, {
     "is status 200": (r) => r.status === 200,
     "response time < 1000ms": (r) => r.timings.duration < 1000,
