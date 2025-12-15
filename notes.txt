@@ -1,0 +1,2 @@
+how to check which end point is causing failure
+how to see the report 
