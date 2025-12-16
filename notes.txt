@@ -1,2 +1,7 @@
 how to check which end point is causing failure
 how to see the report 
+getting the metrix in realtime will be discussed in future topics
+Individual http methods
+how to configure tests to abort of failure
+tags to group by status so that we know which endpoint is causing the delay
+debug
