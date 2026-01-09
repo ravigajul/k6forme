@@ -3,6 +3,18 @@
 ## What is K6?
 K6 is an open-source load testing tool for testing the performance of APIs, microservices, and websites. It's developer-friendly and uses JavaScript for test scripts.
 
+## Local Dashboard
+```shell
+Windows Command Prompt (cmd.exe):
+set "K6_WEB_DASHBOARD=true" & set "K6_WEB_DASHBOARD_EXPORT=k6-report.html" & k6 run script.js
+ 
+Windows PowerShell:
+$env:K6_WEB_DASHBOARD="true"; $env:K6_WEB_DASHBOARD_EXPORT="k6-report.html"; k6 run script.js
+ 
+macOS/Linux: 
+K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=k6-report.html k6 run script.js
+```
+
 ## Installation
 ```bash
 # macOS
